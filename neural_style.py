@@ -127,7 +127,7 @@ def parse_args():
     help='Type of pooling in convolutional neural network. (default: %(default)s)')
   
   parser.add_argument('--device', type=str, 
-    default='/gpu:0',
+    default='/TPU:0',
     choices=['/gpu:0', '/cpu:0'],
     help='GPU or CPU mode.  GPU mode requires NVIDIA CUDA. (default|recommended: %(default)s)')
   
